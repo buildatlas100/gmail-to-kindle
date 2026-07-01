@@ -23,7 +23,7 @@ var LABEL_DONE = "Sent to Kindle";
 var DOC_READY_POLL_MS = 2000;   // how often to check if the Google Doc rendered
 var DOC_READY_MAX_TRIES = 10;   // give up after this many polls
 var MIN_PDF_BYTES = 1000;       // sanity check: PDFs smaller than this are rejected
-var KINDLE_FONT_SIZE = 14;      // body text size in the output PDF (points)
+var KINDLE_FONT_SIZE = 42;      // body text size in the output PDF (points)
 var KINDLE_PAGE_MARGIN = 14;    // page margin in points (14pt ~= 0.2 inch)
 // ======================================================================
 
@@ -195,10 +195,7 @@ function applyKindleFormatting(docId) {
   for (var i = 0; i < paragraphs.length; i++) {
     var text = paragraphs[i].editAsText();
     if (text.getText().length > 0) {
-      // Leave headings alone so they stay proportionally larger
-      if (paragraphs[i].getHeading() === DocumentApp.ParagraphHeading.NORMAL) {
-        text.setFontSize(KINDLE_FONT_SIZE);
-      }
+      text.setFontSize(KINDLE_FONT_SIZE);
     }
   }
 
