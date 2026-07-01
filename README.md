@@ -64,12 +64,12 @@ These constants near the top of `Code.gs` control the PDF formatting:
 
 | Constant | Default | What it does |
 |---|---|---|
-| `KINDLE_FONT_SIZE` | `32` | Body text size in points (large for e-reader legibility) |
+| `KINDLE_FONT_SIZE` | `28` | Body text size in points (large for e-reader legibility) |
 | `KINDLE_PAGE_MARGIN` | `14` | Page margin in points (`14pt` ≈ 0.2") |
 | `DOC_READY_POLL_MS` | `2000` | How often to poll for the Google Doc to finish rendering |
 | `DOC_READY_MAX_TRIES` | `10` | How long to wait total (default = 20s) before giving up |
 
-If text feels too small, bump `KINDLE_FONT_SIZE` to `36` or `42`. If it feels too large, drop to `24` or `28`. If margins still feel wide, drop `KINDLE_PAGE_MARGIN` to `7` (≈ 0.1").
+If text feels too small, bump `KINDLE_FONT_SIZE` to `32` or `36`. If it feels too large, drop to `22` or `24`. If margins still feel wide, drop `KINDLE_PAGE_MARGIN` to `7` (≈ 0.1").
 
 ## Troubleshooting
 

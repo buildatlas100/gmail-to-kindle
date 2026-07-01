@@ -23,7 +23,7 @@ var LABEL_DONE = "Sent to Kindle";
 var DOC_READY_POLL_MS = 2000;   // how often to check if the Google Doc rendered
 var DOC_READY_MAX_TRIES = 10;   // give up after this many polls
 var MIN_PDF_BYTES = 1000;       // sanity check: PDFs smaller than this are rejected
-var KINDLE_FONT_SIZE = 32;      // body text size in the output PDF (points)
+var KINDLE_FONT_SIZE = 28;      // body text size in the output PDF (points)
 var KINDLE_PAGE_MARGIN = 14;    // page margin in points (14pt ~= 0.2 inch)
 // ======================================================================
 
